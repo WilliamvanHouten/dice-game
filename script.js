@@ -28,7 +28,7 @@ function dicegame() {
 
   // if p1 wins
   if (randomDice > randomDice2) {
-    document.querySelector("h1").innerHTML = player1 + "🏆 Wins!";
+    document.querySelector("h1").innerHTML = player1 + "Wins! 🏆";
     winSound.play();
   } else if (randomDice < randomDice2) {
     document.querySelector("h1").innerHTML = player2 + " Wins! 🏆";
