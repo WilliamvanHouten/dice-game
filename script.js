@@ -30,16 +30,16 @@ function dicegame() {
   if (randomDice > randomDice2) {
     document.querySelector("h1").innerHTML = player1 + "🏆 Wins!";
     winSound.play();
-}
-else if (randomDice < randomDice2) {
+  } else if (randomDice < randomDice2) {
     document.querySelector("h1").innerHTML = player2 + " Wins! 🏆";
     winSound.play();
-}
-else if (randomDice === randomDice2) {
+  } else if (randomDice === randomDice2) {
     document.querySelector("h1").innerHTML = "🏅 Match Draw! 🏅";
     drawSound.play();
+  } else {
+    document.querySelector("h1").innerHTML = "Oops! An error has occurred.";
+    drawSound.play();
+  }
 }
 
-  }
-  
 
