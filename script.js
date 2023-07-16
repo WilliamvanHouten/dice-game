@@ -41,9 +41,5 @@ else if (randomDice === randomDice2) {
 }
 
   }
-  // error
-  else {
-    document.querySelector("h1").innerHTML = "Oops! An error has occurred.";
-    drawSound.play();
-  }
-}
+  
+
