@@ -28,18 +28,18 @@ function dicegame() {
 
   // if p1 wins
   if (randomDice > randomDice2) {
-    document.querySelector("h1").innerHTML = player1 + " Wins!";
+    document.querySelector("h1").innerHTML = player1 + "🏆 Wins!";
     winSound.play();
-  }
-  // if p2 wins
-  else if (randomDice < randomDice2) {
-    document.querySelector("h1").innerHTML = player2 + " Wins!";
+}
+else if (randomDice < randomDice2) {
+    document.querySelector("h1").innerHTML = player2 + " Wins! 🏆";
     winSound.play();
-  }
-  // if draw
-  else if (randomDice === randomDice2) {
-    document.querySelector("h1").innerHTML = "Match Draw!";
+}
+else if (randomDice === randomDice2) {
+    document.querySelector("h1").innerHTML = "🏅 Match Draw! 🏅";
     drawSound.play();
+}
+
   }
   // error
   else {
